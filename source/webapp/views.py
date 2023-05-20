@@ -13,7 +13,6 @@ def task_view(request, pk, *args, **kwargs):
     return render(request, 'task_view.html', context)
 
 
-
 def task_create_views(request):
     if request.method == 'GET':
         return render(request, 'task_create.html', {'statuses': STATUS_CHOICES})
