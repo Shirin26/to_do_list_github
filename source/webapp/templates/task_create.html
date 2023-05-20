@@ -1,16 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
+{% block content %}
 <h1>Create Task</h1>
 
-<form action="/task/add/" method="post">
+<form action="" method="post">
     {% csrf_token %}
     <label>Status:</label><br/>
     <select name="status">
@@ -19,14 +12,15 @@
         {% endfor %}
     </select><br/>
 
-    <label>Description:</label><br/>
-    <input type="text" name="description"/><br/>
+    <label>Title:</label><br/>
+    <input type="text" name="title"/><br/>
+
+    <label>Description</label><br/>
+    <textarea name="description" rows="3"></textarea><br/>
 
     <label>To_do_date:</label><br/>
     <input type="text" name="to_do_date"/><br/>
     <br/>
     <input type="submit" value="Send"/>
 </form>
-
-</body>
-</html>
+{% endblock %}
