@@ -1,0 +1,65 @@
+[
+{
+    "model": "webapp.task",
+    "pk": 1,
+    "fields": {
+        "description": "task1",
+        "status": "new",
+        "to_do_date": null
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 2,
+    "fields": {
+        "description": "task2",
+        "status": "new",
+        "to_do_date": null
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 3,
+    "fields": {
+        "description": "task3",
+        "status": "new",
+        "to_do_date": null
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 4,
+    "fields": {
+        "description": "lalala",
+        "status": "done",
+        "to_do_date": "2023-10-10"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 5,
+    "fields": {
+        "description": "jjjj",
+        "status": "done",
+        "to_do_date": "2023-10-05"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$kzvSjln59tLxVZFoVfOlcp$ZIEq01Uzdq7INHMoMRY/zrEhQbdnrAhlD5MA0b9z9CQ=",
+        "last_login": "2023-05-13T14:56:00.591Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-05-13T14:55:36.629Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
