@@ -20,11 +20,61 @@
     }
 },
 {
+    "model": "webapp.task",
+    "pk": 3,
+    "fields": {
+        "title": "title 3",
+        "description": "",
+        "status": "done",
+        "to_do_date": "2023-10-20"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 4,
+    "fields": {
+        "title": "qqqqqqqq",
+        "description": "qqqqqq",
+        "status": "new",
+        "to_do_date": "2023-10-10"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 5,
+    "fields": {
+        "title": "uuuuu",
+        "description": "uuuuuuuu",
+        "status": "in_progress",
+        "to_do_date": null
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 6,
+    "fields": {
+        "title": "qaz",
+        "description": "qaz",
+        "status": "in_progress",
+        "to_do_date": "2023-10-25"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 7,
+    "fields": {
+        "title": "wsx",
+        "description": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+        "status": "new",
+        "to_do_date": "2023-10-10"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$600000$ZnAOBNxLYz1WlnXcwKWIud$9XMlCayqrAxzIJ6Y5hAcpJcU9AzRxfSBJM/YzLAio64=",
-        "last_login": "2023-05-20T08:41:16.427Z",
+        "last_login": "2023-05-20T08:46:39.433Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
