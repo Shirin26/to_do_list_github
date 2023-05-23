@@ -26,4 +26,14 @@ def task_create_views(request):
         new_task = Task.objects.create(title=title, description=description, status=status, to_do_date=to_do_date)
         return redirect('task_view', pk=new_task.pk)
 
-
+def task_update_view(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'task_update.html', {'task': task, 'statuses': STATUS_CHOICES})
+    elif request.method == 'POST':
+        task.status = request.POST.get('status')
+        task.title = request.POST.get('title')
+        task.description = request.POST.get('description')
+        task.to_do_date = request.POST.get('to_do_date')
+        task.save()
+        return redirect('task_view', pk=task.pk)
