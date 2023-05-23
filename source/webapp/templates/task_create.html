@@ -4,23 +4,7 @@
 <h1>Create Task</h1>
 
 <form action="" method="post">
-    {% csrf_token %}
-    <label>Status:</label><br/>
-    <select name="status">
-        {% for key, value in statuses %}
-            <option value="{{ key }}">{{ value }}</option>
-        {% endfor %}
-    </select><br/>
-
-    <label>Title:</label><br/>
-    <input type="text" name="title"/><br/>
-
-    <label>Description</label><br/>
-    <textarea name="description" rows="3"></textarea><br/>
-
-    <label>To_do_date:</label><br/>
-    <input type="text" name="to_do_date"/><br/>
-    <br/>
-    <input type="submit" value="Send"/>
+    {% include 'partial/form.html' %}
+<input type="submit" value="Send"/>
 </form>
 {% endblock %}
