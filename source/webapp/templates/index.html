@@ -12,7 +12,5 @@
     {% for task in tasks %}
     <h3>{{ task.title }}</h3>
     <p><a href="{% url 'task_view' task.pk %}">More...</a></p>
-    <p><a href="{% url 'task_delete' task.pk %}">Delete</a></p>
-
     {% endfor %}
 {% endblock %}
