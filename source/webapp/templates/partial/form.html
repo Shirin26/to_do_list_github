@@ -7,10 +7,22 @@
 </select><br/>
 
 <label>Title:</label><br/>
-<input type="text" name="title" value="{{ task.title }}"/><br/>
+{% if not errors.title %}
+    <input type="text" name="title" value="{{ task.title }}"/><br/>
+{% else %}
+    <input type="text" class="border border-danger border-2" name="title" value="{{ task.title }}"/><br/>
+    <p class="text-danger">{{ errors.title }}</p>
+    <br/>
+{% endif %}
 
 <label>Description</label><br/>
-<textarea name="description" rows="3">{{ task.description }}</textarea><br/>
+{% if not errors.description %}
+    <textarea name="description" rows="3">{{ task.description }}</textarea><br/>
+{% else %}
+    <textarea class="border border-danger border-2" name="description" rows="3">{{ task.description }}</textarea><br/>
+    <p class="text-danger">{{ errors.description }}</p>
+    <br/>
+{% endif %}
 
 <label>To_do_date:</label><br/>
 <input type="text" name="to_do_date" value="{{ task.to_do_date }}"/><br/>
